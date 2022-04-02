@@ -17,7 +17,7 @@ We have included 3 main app routes, namely:
         </details>
 
 
-
+Markup :  - - - -
 
 ## Using this repo
 ### `Docker-Compose command to run the Flask container`
@@ -35,6 +35,5 @@ Build and run:
 ```bash
 docker-compose exec web python make-request.py
 # This command
-# Run this command from the repository terminal/command prompt to build your own container
+# Run this command from the repository terminal/command prompt
 ```
-  
