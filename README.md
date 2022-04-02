@@ -37,7 +37,4 @@ docker-compose exec web python make-request.py
 # This command
 # Run this command from the repository terminal/command prompt to build your own container
 ```
-Markup : <details>
-           <summary>Title 1</summary>
-           <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
-         </details>
+  
