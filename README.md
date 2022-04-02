@@ -1,6 +1,8 @@
 # Basic Hello World app with Flask
 
-This repo houses my flask app for the Security Analysis Class[MSBX 5500] of 2022
+This repo houses my flask app for the Security Analysis Class[MSBX 5500] of 2022. It is a simple web-application framework, performing a few basic string manipulation. We have included 3 app routes, namely:
+
+
 
 
 ## Using this repo
@@ -21,3 +23,7 @@ docker-compose exec web python make-request.py
 # This command
 # Run this command from the repository terminal/command prompt to build your own container
 ```
+Markup : <details>
+           <summary>Title 1</summary>
+           <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+         </details>
