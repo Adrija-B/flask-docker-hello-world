@@ -20,9 +20,12 @@ We have included 3 main app routes, namely:
 ## REPO CONTENTS
 FILENAME  | CONTENT
 ------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-
+.GITIGNORE  | Helps exclude stuff that needs to be excluded.
+Dockerfile  | FROM a python version 3.9 of your choice COPY a local requirements.txt and pip install it a CMD that runs your flask app using some incantation of flask run It should bind to all interfaces (i.e., host=0.0.0.0)
+Requirements.txt  | Content Cell
+docker-compose.yml  | Content Cell
+app.py  | Content Cell
+make-request.py  | Content Cell
 
 - - - -
 
