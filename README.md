@@ -22,8 +22,7 @@ We have included 3 main app routes, namely:
 FILENAME  | CONTENT
 ------------- | -------------
 .GITIGNORE  | Helps exclude stuff that needs to be excluded.
-Dockerfile  | FROM a python version 3.9 of your choice
-COPY a local requirements.txt and pip install it a CMD that runs your flask app using some incantation of flask run It should bind to all interfaces (i.e., host=0.0.0.0)
+Dockerfile  | Runs ``` FROM``` python:3.9-slim-bullseye and ```COPY``` the local requirements.txt and pip install it. We have added ```CMD``` ["flask", "run"], that runs the flask app and it binds to all interfaces (i.e., ```host=0.0.0.0```)
 Requirements.txt  | Includes all necessary packages, version-pinned.
 docker-compose.yml  | build the local (.) Dockerfile publish container port 5000 to host port 5555 mount the current directory into whatever your Dockerfile WORKDIR is.
 app.py  | The Flask APP.
