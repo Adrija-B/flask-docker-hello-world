@@ -9,7 +9,7 @@ We have included 3 main app routes, namely:
          </details>
          <details>
           <summary>`word` route</summary>
-          <p>This route uses the python <i>requests</i> package to fetch a random word from https://random-word-api.herokuapp.com/word?number=1, which it then changes to upper case and then reverses the characters. The new word and the original word are combined into a JSON file and returned. </p>
+          <p>This route uses the python *requests* package to fetch a random word from https://random-word-api.herokuapp.com/word?number=1, which it then changes to upper case and then reverses the characters. The new word and the original word are combined into a JSON file and returned. </p>
         </details>
         <details>
          <summary>`string-count` route</summary>
@@ -18,14 +18,15 @@ We have included 3 main app routes, namely:
 
 - - - -
 ## REPO CONTENTS
+
 FILENAME  | CONTENT
 ------------- | -------------
 .GITIGNORE  | Helps exclude stuff that needs to be excluded.
 Dockerfile  | FROM a python version 3.9 of your choice COPY a local requirements.txt and pip install it a CMD that runs your flask app using some incantation of flask run It should bind to all interfaces (i.e., host=0.0.0.0)
-Requirements.txt  | Content Cell
-docker-compose.yml  | Content Cell
-app.py  | Content Cell
-make-request.py  | Content Cell
+Requirements.txt  | Includes all necessary packages, version-pinned.
+docker-compose.yml  | build the local (.) Dockerfile publish container port 5000 to host port 5555 mount the current directory into whatever your Dockerfile WORKDIR is.
+app.py  | The Flask APP.
+make-request.py  | Use the *requests* library to hit each of the flask app routes.
 
 - - - -
 
