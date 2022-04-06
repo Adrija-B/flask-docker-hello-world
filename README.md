@@ -16,7 +16,7 @@ We have included 3 main app routes, namely:
         <details>
         <p>`POST` Method</p>
          <summary>`string-count` route</summary>
-         <p>The route returns the length of any given string, again in JSON format. I used https://reqbin.com/ to enter a string and check.</p>
+         <p>The route returns the length of any given string, again in JSON format. I used [Reqbin](https://reqbin.com/) to enter a string and check.</p>
         </details>
 
 - - - -
@@ -27,7 +27,7 @@ FILENAME  | CONTENT
 .GITIGNORE  | Helps exclude stuff that needs to be excluded ***[Future-Proofed]***
 Dockerfile  | Runs ``` FROM``` python:3.9-slim-bullseye and ```COPY``` the local requirements.txt and pip install it. We have added ```CMD``` ["flask", "run"], that runs the flask app and it binds to all interfaces (i.e., ```host=0.0.0.0```)
 Requirements.txt  | Includes all necessary packages, version-pinned where possible
-docker-compose.yml  | ```BUILD``` the local  Dockerfile and publish the docker container port ```5000``` to the local port ```5555``` and mounts the current ```VOLUME``` to the Dockerfile WORKDIR
+docker-compose.yml  | ```BUILD``` the local  Dockerfile and publish the docker container port ```5000``` to the local port ```5555``` and mounts the current ```VOLUME``` to the WORKDIR specified in the Dockerfile
 app.py  | The Flask APP
 make-request.py  | Uses the *requests* library to hit each of the flask app routes
 templates  | Stores the templates for the app routes
@@ -40,15 +40,13 @@ Build and run:
 
 ```bash
 docker-compose up
-# This command publishes through local port 5555
-# Run this command from the repository terminal/command prompt to run the flask container
+# This command publishes through local port 5555 to run the flask app from a docker container
 ```
 
 ### `Docker-Compose command to execute make-request.py within a running container`
-Build and run:
+Run:
 
 ```bash
 docker-compose exec web python make-request.py
-# This command
-# Run this command from the repository terminal/command prompt
+# This command makes the route requests
 ```
